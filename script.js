@@ -1,7 +1,13 @@
-const button = document.getElementById("appointmentBtn")
+// simple smooth scroll
 
-button.addEventListener("click", function(){
+document.querySelectorAll("nav a").forEach(link=>{
 
-alert("Appointment booking coming soon!")
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+alert("This is a demo button. Link pages later.");
+
+})
 
 })
