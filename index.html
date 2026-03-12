@@ -2,17 +2,423 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Unsafe website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hickory Periodontics | Expert Periodontal Care in Conover, NC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- create a navigation bar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#home">Hickory Periodontics</a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#patient-info" class="nav-link">Patient Info</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="cta-button header-cta">Request Appointment</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Placeholder: Replace with actual hero image -->
+        <div class="hero-bg" style="background-image: url('/Image/Hardscape.png')"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text-box">
+                <h1 class="hero-title">Hickory Periodontics: How healthy smiles happen.</h1>
+                <p class="hero-subtitle">
+                    Periodontists are experts in the diagnosis, treatment, and prevention of gum disease, 
+                    and in the surgical placement of dental implants.
+                </p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary">Request Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Experience World-Class Periodontal Care</h2>
+            <p class="section-intro">
+                At Hickory Periodontics, we're committed to providing the highest standard of periodontal and 
+                implant treatment using advanced techniques and compassionate care. Dr. Tate Weller combines 
+                cutting-edge technology with extensive expertise to deliver exceptional results while ensuring 
+                your complete comfort throughout every visit.
+            </p>
+            <p class="section-description">
+                Whether you're seeking treatment for gum disease, considering dental implants, or need a bone 
+                graft or sinus lift procedure, our practice brings world-class periodontists and modern clinical 
+                practices to Conover. We believe that exceptional periodontal care should feel welcoming, 
+                transparent, and personalized to your unique needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section class="doctor-section">
+        <div class="container">
+            <h2>Meet the Doctor</h2>
+            
+            <div class="doctor-content">
+                <div class="doctor-image">
+                    <!-- Doctor photo: bro.png -->
+                    <img src="/Image/Brother Weller.png" alt="Dr. Tate Weller, Periodontist" class="doctor-photo">
+                </div>
+                
+                <div class="doctor-bio">
+                    <h3>Dr. Tate Weller</h3>
+                    <p>
+                        Dr. Tate Weller, perodontist in Hickory, NC, offers advanced dental techniques and 
+                        procedures to treat periodontal disease. Dr. Weller attended the University of Utah 
+                        dental school with periodontal training at Augusta University. He offers treatments 
+                        such as bone grafting, gum grafting, and sinus lift procedures.
+                    </p>
+                    <p>
+                        Outside of dentistry, Dr. Weller enjoys hiking, playing disc golf, and spending time 
+                        with his wife and 4 children.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose" id="patient-info">
+        <div class="container">
+            <h2>Why Choose Hickory Periodontics?</h2>
+            <p class="section-intro">
+                We're dedicated to providing expert periodontal care with a patient-first approach and the 
+                latest techniques available.
+            </p>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="icon">⭐</div>
+                    <h3>5-Star Patient Experience</h3>
+                    <p>
+                        Our patients consistently praise our gentle approach, attentive staff, and welcoming 
+                        environment. We prioritize your comfort and confidence at every appointment.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="icon">💰</div>
+                    <h3>No Surprise Fees</h3>
+                    <p>
+                        Transparent pricing and detailed treatment estimates mean you'll always know the cost 
+                        of your care upfront. No hidden charges, ever.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="icon">🏆</div>
+                    <h3>Experienced Specialist Care</h3>
+                    <p>
+                        Dr. Weller's advanced training in periodontics and implant surgery ensures you receive 
+                        expert diagnosis and treatment for complex cases.
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="icon">✓</div>
+                    <h3>Affordable Treatment Options</h3>
+                    <p>
+                        We work with you to develop payment plans and discuss financing options, ensuring that 
+                        quality periodontal care is accessible to our community.
+                    </p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="feature-card">
+                    <div class="icon">🔬</div>
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>
+                        Our practice utilizes the latest diagnostic and surgical technology, enabling precise 
+                        treatment planning and optimal clinical outcomes.
+                    </p>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="feature-card">
+                    <div class="icon">🎯</div>
+                    <h3>Minimally Invasive Precision</h3>
+                    <p>
+                        We employ advanced, minimally invasive techniques that reduce discomfort, promote faster 
+                        healing, and lead to superior long-term results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Transformative Periodontal Solutions</h2>
+            
+            <div class="services-grid">
+                <!-- Service 1: Dental Implants -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <!-- Placeholder: Replace with actual service image -->
+                        <div class="image-placeholder-service"><img src="Image/Dental Implant.png" alt="Dental Implant"></div>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>
+                        Replace missing teeth with a permanent solution that looks and functions like natural teeth. 
+                        Our state-of-the-art implant technology and surgical expertise ensure long-lasting results 
+                        and exceptional outcomes. From single tooth replacement to full mouth restoration, we create 
+                        confident, beautiful smiles.
+                    </p>
+                </div>
+                
+                <!-- Service 2: Gum Grafting -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <!-- Gum Graft service image -->
+                        <img src="Image/Gum Graft.png" alt="Gum Grafting procedure" class="service-image-img">
+                    </div>
+                    <h3>Gum Grafting</h3>
+                    <p>
+                        Address gum recession with precision graft procedures that restore gum tissue, strengthen 
+                        tooth support, and enhance your smile's appearance. Our minimally invasive techniques use 
+                        advanced surgical methods to achieve natural-looking, long-lasting results with minimal 
+                        post-operative discomfort.
+                    </p>
+                </div>
+                
+                <!-- Service 3: Periodontal Disease Treatment -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <!-- Periodontal Disease Treatment image -->
+                        <img src="Image/PD Disease.png" alt="Periodontal Disease Treatment" class="service-image-img">
+                    </div>
+                    <h3>Periodontal Disease Treatment</h3>
+                    <p>
+                        From early gingivitis to advanced periodontitis, we provide comprehensive treatment to 
+                        restore oral health and prevent tooth loss. Our customized approach combines professional 
+                        care with patient education, ensuring lasting results and a healthier future for your smile.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Journey Section -->
+    <section class="patient-journey">
+        <div class="container">
+            <h2>Get Next Level Periodontal Care in Three Simple Steps</h2>
+            
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Request Your Consultation</h3>
+                    <p>
+                        Contact our office to schedule your initial consultation. During this appointment, 
+                        Dr. Weller will listen to your concerns, perform a thorough periodontal evaluation, 
+                        and answer all your questions about treatment options.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Personalized Treatment Plan</h3>
+                    <p>
+                        We'll develop a customized treatment plan tailored to your specific needs and goals. 
+                        You'll receive clear explanations, transparent pricing, and discuss all available options 
+                        before moving forward.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Treatment and Follow-Up</h3>
+                    <p>
+                        Receive your treatment with expert care in our comfortable clinical environment. We'll 
+                        provide detailed aftercare instructions and schedule follow-up appointments to ensure 
+                        optimal healing and long-term success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Modal -->
+    <div class="appointment-modal" id="appointmentModal">
+        <div class="appointment-overlay" id="appointmentOverlay"></div>
+        <div class="appointment-form-container">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close form">
+                <span>&times;</span>
+            </button>
+            
+            <h2 class="modal-title">Request An Appointment</h2>
+            
+            <p class="modal-intro">
+                Arranging your visit is as simple as a phone call or providing us with your contact information. 
+                We'll promptly get in touch to confirm your appointment. We're eagerly anticipating the opportunity to meet you.
+            </p>
+            
+            <form class="appointment-form" id="appointmentForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName" 
+                            placeholder="First Name" 
+                            class="form-input"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName" 
+                            placeholder="Last Name" 
+                            class="form-input"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Your Email" 
+                        class="form-input"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group full-width">
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Your Phone Number" 
+                        class="form-input"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Tell us about your dental needs or questions" 
+                        class="form-textarea"
+                        rows="5"
+                    ></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">SEND MESSAGE</button>
+                
+                <p class="privacy-note">
+                    By submitting this form, you agree to our <span class="privacy-link">privacy policy</span>. 
+                    We'll never share your information with third parties.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Location/Contact Section -->
+    <section class="location" id="contact">
+        <div class="container">
+            <h2>Office Location</h2>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Hickory Periodontics</h3>
+                    <p class="address">
+                        3305 16th Ave SE #301<br>
+                        Conover, NC 28613
+                    </p>
+                    <p class="phone">
+                        <strong>Phone:</strong> <a href="tel:+18284650187">(828) 465-0187</a>
+                    </p>
+                    <p class="hours">
+                        <strong>Hours:</strong><br>
+                        Monday – Friday: 8:00 AM – 5:00 PM<br>
+                        Saturday & Sunday: Closed
+                    </p>
+                    <button class="cta-button primary">Request Appointment</button>
+                </div>
+                
+                <div class="location-map">
+                    <!-- Google Map Embed for Hickory Periodontics -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0274939411956!2d-81.26645797409381!3d35.7009410288907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88513145f008ec65%3A0x94793191b60d326c!2sHickory%20Periodontics!5e0!3m2!1sen!2sus!4v1773339629764!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://maps.google.com/?q=Hickory+Periodontics,+3305+16th+Ave+SE+%23301,+Conover,+NC+28613" target="_blank" class="open-maps-btn">Open in Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Hickory Periodontics</h4>
+                    <p>
+                        Providing expert periodontal and implant care to the Conover and Hickory communities 
+                        with a commitment to excellence and patient-centered care.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>
+                        <strong>Phone:</strong> <a href="tel:+18284650187">(828) 465-0187</a><br>
+                        <strong>Address:</strong> 3305 16th Ave SE #301<br>
+                        Conover, NC 28613
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hickory Periodontics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
