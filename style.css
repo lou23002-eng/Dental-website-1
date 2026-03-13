@@ -818,6 +818,10 @@ section {
         padding: 0 1rem;
     }
 
+    body {
+        padding-top: 60px;
+    }
+
     .mobile-toggle {
         display: flex;
     }
@@ -869,33 +873,48 @@ section {
     .hero {
         height: auto;
         min-height: 80vh;
-        padding: 3rem 0;
+        padding: 0;
+        margin-top: 0;
     }
 
     .hero-text-box {
         padding: 2.5rem 1.5rem;
         margin: 2rem 1rem;
+        text-align: center;
     }
 
     h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     h2 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
     }
 
     .hero-title {
         font-size: 2rem;
+        text-align: center;
     }
 
     .hero-subtitle {
         font-size: 1rem;
+        text-align: center;
     }
 
     .hero-buttons {
         gap: 1rem;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
     }
 
     /* Sections */
@@ -908,6 +927,14 @@ section {
     }
 
     /* Doctor Section */
+    .doctor-section h2 {
+        font-size: 3rem;
+    }
+
+    .doctor-bio h3 {
+        font-size: 1.5rem;
+    }
+
     .doctor-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -925,6 +952,7 @@ section {
 
     .feature-card {
         padding: 1.5rem;
+        text-align: center;
     }
 
     /* Services Grid */
@@ -933,16 +961,40 @@ section {
         gap: 2rem;
     }
 
+    .service-card h3 {
+        text-align: center;
+    }
+
+    .service-card p {
+        text-align: center;
+    }
+
     /* Steps Container */
     .steps-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    .step-card {
+        text-align: center;
+    }
+
+    .step-card h3 {
+        text-align: center;
+    }
+
+    .step-card p {
+        text-align: center;
+    }
+
     /* Location */
     .location-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .location-info h3 {
+        text-align: center;
     }
 
     .location-map {
