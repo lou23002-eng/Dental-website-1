@@ -11,7 +11,9 @@
     <header class="navbar" id="navbar">
         <div class="navbar-container">
             <div class="logo">
-                <a href="#home">Hickory Periodontics</a>
+                <a href="#home" aria-label="Hickory Periodontics">
+                    <img src="image/hickory-pd-sign.png" alt="Hickory Periodontics logo" class="logo-img">
+                </a>
             </div>
             
             <button class="mobile-toggle" id="mobileToggle">
@@ -26,7 +28,7 @@
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#patient-info" class="nav-link">Patient Info</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="nav-link" id="contactNowLink">Contact Now</a></li>
                 </ul>
             </nav>
             
@@ -56,7 +58,7 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2>Experience World-Class Periodontal Care</h2>
+            <h2>Advanced Periodontal Care You Can Trust</h2>
             <p class="section-intro">
                 At Hickory Periodontics, we're committed to providing the highest standard of periodontal and 
                 implant treatment using advanced techniques and compassionate care. Dr. Tate Weller combines 
@@ -110,16 +112,6 @@
             </p>
             
             <div class="features-grid">
-                <!-- Card 1 -->
-                <div class="feature-card">
-                    <div class="icon">⭐</div>
-                    <h3>5-Star Patient Experience</h3>
-                    <p>
-                        Our patients consistently praise our gentle approach, attentive staff, and welcoming 
-                        environment. We prioritize your comfort and confidence at every appointment.
-                    </p>
-                </div>
-                
                 <!-- Card 2 -->
                 <div class="feature-card">
                     <div class="icon">💰</div>
@@ -167,6 +159,16 @@
                     <p>
                         We employ advanced, minimally invasive techniques that reduce discomfort, promote faster 
                         healing, and lead to superior long-term results.
+                    </p>
+                </div>
+
+                <!-- Move 5-Star Patient Experience to last -->
+                <div class="feature-card">
+                    <div class="icon">⭐</div>
+                    <h3>5-Star Patient Experience</h3>
+                    <p>
+                        Our patients consistently praise our gentle approach, attentive staff, and welcoming 
+                        environment. We prioritize your comfort and confidence at every appointment.
                     </p>
                 </div>
             </div>
@@ -222,6 +224,56 @@
                         care with patient education, ensuring lasting results and a healthier future for your smile.
                     </p>
                 </div>
+                <!-- Service 4: Bone Grafts -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="image/bonegraft.png" alt="Bone Grafts" class="service-image-img">
+                    </div>
+                    <h3>Bone Grafts</h3>
+                    <p>
+                        Enhance jaw structure and create a strong foundation for dental implants with expert bone grafting procedures. 
+                        Our team uses advanced materials and precision techniques to rebuild bone safely and effectively, supporting long-term 
+                        oral health and improved implant outcomes.
+                    </p>
+                </div>            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Patients Are Saying</h2>
+            <p class="testimonial-subtitle">Real experiences from patients who trusted our team with their care.</p>
+            <div class="testimonial-wrapper">
+                <button class="testimonial-nav testimonial-prev" aria-label="Scroll testimonials left">‹</button>
+                <div class="testimonial-track" id="testimonialTrack">
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <h3 class="testimonial-name">Lena Killian</h3>
+                        <p class="testimonial-text">“Highly recommend Hickory Periodontics! Dr Weller and staff are great! I was nervous about getting a laser procedure done as recommended by Dr Weller. There was no need to be nervous as Dr Weller made this painless from beginning to end.”</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <h3 class="testimonial-name">DAVE T</h3>
+                        <p class="testimonial-text">“I was in there last week for a follow up with Dr Weller and told him that his hygienist Jen was AMAZING! She made me feel very comfortable and I felt no discomfort. Dr Weller and his team Rock! True Pros. Thanks again!!!”</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <h3 class="testimonial-name">Jackie Elder</h3>
+                        <p class="testimonial-text">“The staff is warm and welcoming. Dr. Weller is very knowledgeable and also very nice.”</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <h3 class="testimonial-name">Anna Pearson</h3>
+                        <p class="testimonial-text">“I had a graft done on April 3. Dr. Brown and his assistant were very good. They constantly asked if I was okay and they didn't rush me out for the next patient. They explained the after surgery care before I left. Definitely made this surgery more tolerable.”</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="testimonial-stars">★★★★★</p>
+                        <h3 class="testimonial-name">chasity kohnle</h3>
+                        <p class="testimonial-text">“I have been putting off my gum graft for years. Dr. Brown and his staff are wonderful! The procedure was painless and I’m healing very nicely. I would definitely go back to him!”</p>
+                    </article>
+                </div>
+                <button class="testimonial-nav testimonial-next" aria-label="Scroll testimonials right">›</button>
             </div>
         </div>
     </section>

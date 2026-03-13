@@ -52,6 +52,15 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Contact Now navbar link behavior: show small popup with phone number
+const contactNowLink = document.getElementById('contactNowLink');
+if (contactNowLink) {
+    contactNowLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Call us now at +1 (828) 465-0187');
+    });
+}
+
 // Form validation and submission
 appointmentForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -241,6 +250,52 @@ if (heroBg) {
             });
             ticking = true;
         }
+    });
+}
+
+// =====================================================
+// Testimonials slider controls
+// =====================================================
+
+const testimonialTrack = document.getElementById('testimonialTrack');
+const prevBtn = document.querySelector('.testimonial-prev');
+const nextBtn = document.querySelector('.testimonial-next');
+
+if (testimonialTrack) {
+    const cardWidth = () => testimonialTrack.querySelector('.testimonial-card')?.offsetWidth || 300;
+
+    prevBtn?.addEventListener('click', () => {
+        testimonialTrack.scrollBy({ left: -(cardWidth() + 16), behavior: 'smooth' });
+    });
+
+    nextBtn?.addEventListener('click', () => {
+        testimonialTrack.scrollBy({ left: cardWidth() + 16, behavior: 'smooth' });
+    });
+
+    let startX = 0;
+    let scrollStart = 0;
+    const isDragging = { value: false };
+
+    testimonialTrack.addEventListener('pointerdown', (e) => {
+        isDragging.value = true;
+        startX = e.clientX;
+        scrollStart = testimonialTrack.scrollLeft;
+        testimonialTrack.setPointerCapture(e.pointerId);
+    });
+
+    testimonialTrack.addEventListener('pointermove', (e) => {
+        if (!isDragging.value) return;
+        const delta = startX - e.clientX;
+        testimonialTrack.scrollLeft = scrollStart + delta;
+    });
+
+    testimonialTrack.addEventListener('pointerup', (e) => {
+        isDragging.value = false;
+        testimonialTrack.releasePointerCapture(e.pointerId);
+    });
+
+    testimonialTrack.addEventListener('pointerleave', () => {
+        isDragging.value = false;
     });
 }
 
