@@ -592,17 +592,39 @@ section {
     margin-bottom: 0.35rem;
 }
 
+.testimonial-source {
+    font-size: 0.9rem;
+    color: #4a90a4;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 600;
+}
+
 .testimonial-name {
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    margin: 0.25rem 0 0.75rem;
 }
 
 .testimonial-text {
     color: var(--text-dark);
     line-height: 1.6;
     font-size: 0.95rem;
+    margin: 0;
+}
+
+.testimonial-stars,
+.testimonial-name,
+.testimonial-text {
+    text-align: left;
+    margin-left: 0;
+}
+
+.testimonial-card {
+    min-height: 280px;
 }
 
 .testimonial-nav {
@@ -651,7 +673,7 @@ section {
     background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
-    border: none;
+    border: 2px solid var(--primary-color);
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
     display: flex;
@@ -672,9 +694,8 @@ section {
     width: 100%;
     height: 350px;
     background: #ffffff;
-    border-top: 4px solid var(--primary-color);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
 }
@@ -955,22 +976,23 @@ section {
     .navbar-container {
         height: 60px;
         padding: 0 1rem;
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: relative;
     }
 
     .logo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        position: static;
+        transform: none;
+        margin: 0;
     }
 
     .mobile-toggle {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        position: static;
+        transform: none;
+        margin: 0;
+        display: flex;
     }
 
     .logo-img {
@@ -983,26 +1005,24 @@ section {
         padding-top: 60px;
     }
 
-    .mobile-toggle {
-        display: flex;
-    }
-
     .nav-menu {
         position: absolute;
         top: 60px;
         left: 0;
         right: 0;
-        background-color: #2c3e50;
+        background-color: transparent;
         flex-direction: column;
         gap: 0;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
-        box-shadow: var(--shadow);
+        transition: max-height 0.3s ease, background-color 0.3s ease;
+        box-shadow: none;
     }
 
     .nav-menu.active {
         max-height: 400px;
+        background-color: #2c3e50;
+        box-shadow: var(--shadow);
     }
 
     .nav-menu ul {
